@@ -13,13 +13,12 @@ const Card = (props) => {
 const styles = StyleSheet.create({
     containerStyle: {
         borderRadius: 2,
-        borderBottomWidth: 0,
         shadowOffset: {width: 0, height: 2},
         shadowOpacity: 0.3,
         shadowRadius: 2,
         elevation: 1,
-        marginLeft: 5,
-        marginRight: 5,
+        margin: 0,
+        padding: 0
     }
 });
 
