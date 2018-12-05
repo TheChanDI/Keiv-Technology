@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View} from 'react-native';
+import {View, ImageBackground} from 'react-native';
 import Screen1 from './src/components/Screen/Screen1';
 import Screen2 from './src/components/Screen/Screen2';
 import {createBottomTabNavigator, createAppContainer} from 'react-navigation';
@@ -19,9 +19,9 @@ class HomeScreen extends Component {
 class SettingsScreen extends Component {
   render() {
     return (
-      <View>
+      <ImageBackground source={require('./src/assets/students.jpg')} style={{flex: 1}}>
         <Screen2 />
-      </View>
+      </ImageBackground>
     );
   }
 }
@@ -51,7 +51,11 @@ const TabNavigator = createBottomTabNavigator(
     }),
     tabBarOptions: {
       activeTintColor: 'tomato',
-      inactiveTintColor: 'gray',  
+      inactiveTintColor: 'gray', 
+       style:{
+         backgroundColor: '#cce6ff'
+       }
+      
     },
   }
 

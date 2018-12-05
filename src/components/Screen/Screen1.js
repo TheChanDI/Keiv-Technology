@@ -49,10 +49,10 @@ class Screen1 extends Component {
                     placeholderName="Search for Oppourtunities..."
                     />
 
-                    
+{/*                     
                     <TouchableOpacity>
                         <Icon name="search" size={30}/>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
                    
                 </CardSection>
                 
